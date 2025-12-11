@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - _ctted</title>
+    <title>Adam's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="eternity.css">
+    <!-- FIXED PATH: Added ./ before CSS file -->
+    <link rel="stylesheet" href="./eternity.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="eternity.js" defer></script>
+    <!-- FIXED PATH: Added ./ before JS file -->
+    <script src="./eternity.js" defer></script>
 </head>
 <body>
     <div class="app-container">
@@ -21,7 +23,7 @@
                     <div class="window-control control-minimize"></div>
                     <div class="window-control control-maximize"></div>
                 </div>
-                <div class="window-title">About Me - _ctted</div>
+                <div class="window-title">About Me - Adam | @Patcher Dev</div>
                 <div class="reactions">
                     <button class="reaction-btn like" id="like-btn">
                         <i class="fas fa-thumbs-up"></i>
@@ -41,12 +43,16 @@
                     <div class="user-info">
                         <!--INPUT PFP URL HERE!-->
                         <div class="avatar">
-                            <!-- Replace the URL below with your profile picture -->
-                            <!-- Example: <img src="https://example.com/your-picture.jpg" alt="Profile"> -->
-                            <img src="https://cdn.discordapp.com/attachments/1398860349570285652/1448459367593545798/b3454f30b5b153f84123cd474cf9ea28.png?ex=693b5668&is=693a04e8&hm=075584ab59b45e28fc6cca5c6ceb15264cfeac8e09c4f509ed8a792736c3e150&" alt="_ctted Profile Picture">
+                            <!-- To use a local image: -->
+                            <!-- 1. Place your image file (profile.jpg, avatar.png, etc.) in the same folder -->
+                            <!-- 2. Change the src below to your filename (e.g., "profile.jpg") -->
+                            <img src="./c20a16c91a818be9f0ea3e4ab255b465.jpg" alt="Patcher Dev Profile Picture" 
+                                 loading="lazy"
+                                 width="80"
+                                 height="80">
                         </div>
-                        <div class="username">_ctted</div>
-                        <div class="user-handle">@_ctted</div>
+                        <div class="username">Adam</div>
+                        <div class="user-handle">@patcherdev</div>
                     </div>
                     <ul class="nav-menu">
                         <li class="nav-item active" data-page="welcome">
@@ -63,7 +69,7 @@
                         </li>
                         <li class="nav-item" data-page="token">
                             <div class="nav-icon"><i class="fas fa-key"></i></div>
-                            <div>Love Token</div>
+                            <div>Token</div>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +80,7 @@
                     <div class="page active" id="welcome-page">
                         <div class="page-header">
                             <h1 class="page-title">Welcome</h1>
-                            <p class="page-subtitle">Home • My Portfolio <\3 </p>
+                            <p class="page-subtitle">Home • My Portfolio</p>
                         </div>
                         <div class="content-box">
                             <div class="markdown-content" id="welcome-content">
@@ -122,7 +128,7 @@
                     <div class="page" id="token-page">
                         <div class="page-header">
                             <h1 class="page-title">Token</h1>
-                            <p class="page-subtitle">Token of my lovelife. <\3 </p>
+                            <p class="page-subtitle">Discord Token Trick</p>
                         </div>
                         <div class="content-box">
                             <div class="markdown-content" id="token-content">
@@ -141,10 +147,10 @@
     <script>
         // Markdown URLs
         const markdownUrls = {
-            welcome: "https://raw.githubusercontent.com/patcherdev/_ctted/main/welcome.md",
-            about: "https://raw.githubusercontent.com/patcherdev/_ctted/main/aboutme.md",
-            platforms: "https://raw.githubusercontent.com/patcherdev/_ctted/main/platforms.md",
-            token: "https://raw.githubusercontent.com/patcherdev/_ctted/main/token.md"
+            welcome: "https://raw.githubusercontent.com/patcherdev/aboutme/main/welcome.md",
+            about: "https://raw.githubusercontent.com/patcherdev/aboutme/main/aboutme.md",
+            platforms: "https://raw.githubusercontent.com/patcherdev/aboutme/main/platforms.md",
+            token: "https://raw.githubusercontent.com/patcherdev/aboutme/main/tokengetter.md"
         };
 
         // Navigation
